@@ -165,14 +165,8 @@ function preload(){
   tridentStrikeAni = loadAnimation("waterPollution/tridentStrike_1.png", "waterPollution/tridentStrike_1 - 2.png", 
   "waterPollution/tridentStrike_2.png","waterPollution/tridentStrike_2_1.png",  "waterPollution/tridentStrike_3.png", "waterPollution/tridentStrike_5.png");
    
-   whaleAttackAni = loadAnimation("waterPollution/whaleAttack_1.png", "waterPollution/whaleAttack_2.png", 
-   "waterPollution/whaleAttack_3.png", "waterPollution/whaleAttack_4.png", "waterPollution/whaleAttack_5.png"
-   , "waterPollution/whaleAttack_6.png", "waterPollution/whaleAttack_7.png", "waterPollution/whaleAttack_8.png",
-    "waterPollution/whaleAttack_9.png", "waterPollution/whaleAttack_10.png",);
-
    aquamanSwimmingAni = loadAnimation("waterPollution/Swimming_1.png", "waterPollution/Swimming_2.png", "waterPollution/Swimming_3.png", "waterPollution/Swimming_4.png",
    "waterPollution/Swimming_5.png", "waterPollution/Swimming_6.png", "waterPollution/Swimming_7.png", "waterPollution/Swimming_8.png");
-   
 
    tridentSpinBlockAni = loadAnimation("waterPollution/tridentSpin_1.png", "waterPollution/tridentSpin_2.png", "waterPollution/tridentSpin_3.png"
    , "waterPollution/tridentSpin_4.png", "waterPollution/tridentSpin_5.png", "waterPollution/tridentSpin_6.png"
@@ -289,7 +283,7 @@ function setup() {
   hulk = createSprite(400, 200, 50, 50);
   hulk.scale = 0.4;
   hulk.visible = false;
-  hulk.debug =true;
+  //hulk.debug =true;
 
   hulk.addAnimation("hulk", hulkStanding);
   hulk.addAnimation("hulkWalk", hulkWalking);
@@ -350,7 +344,7 @@ function setup() {
   aquaman.addAnimation("aquamanSwimming", aquamanSwimmingAni);
   aquaman.addAnimation("tridentStriking", tridentStrikeAni);
   aquaman.addAnimation("tridentSpinning", tridentSpinBlockAni);
-  aquaman.addAnimation("whaleAttacking", whaleAttackAni);
+  
 
   //aquamanEvil
   godzilla = createSprite(1300, 50, 50, 50);
